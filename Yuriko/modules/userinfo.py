@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current 𝗧𝗿𝗶𝘀𝗵𝗮 Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current ⚡️𝐇𝐔𝐌𝐀𝐍𝐈𝐓𝐘 𝐍𝐄𝐓𝐖𝐎𝐑𝐊⚡️ Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n╘═━ [Support](@JaiHindChatting) [Updates](@RymOfficial)"
+    result += "\n╘═━ [Support](@HUMANITYPOWER_SUPPORT) [Updates](@HUMANTIPOWERBOT_SUPPORT)"
     update.effective_message.reply_text(
         result,
         reply_markup=InlineKeyboardMarkup(
